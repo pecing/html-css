@@ -53,6 +53,8 @@ div.caixas {
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin: 0px;
+    padding: 0px;
 }
 
 div.caixa-apresentacao {
@@ -85,5 +87,29 @@ div.caixa-trabalho > p {
 img.foto-pecing {
     max-width: 20%;
     display: block;
-    text-align: end;
+    position: absolute;
+    right: 1000px;
+    top: 200px;
+    left: 1200px;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    bottom: 0px;
+    padding: 5px;
+}
+
+footer > p {
+    text-align: center;
+    font-size: 1em;
+}
+
+.footer-links {
+    text-align: center;
+}
+
+.footer-links > a {
+    text-decoration: none;
 }
