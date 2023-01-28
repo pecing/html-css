@@ -1,92 +1,89 @@
 @charset "UTF-8";
 
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
     color: white;
 }
 
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+p {
+    font-size: 1.5em;
+}
 
 body {
-    background-color: rgba(0, 0, 0, 0.918);
-    margin: 0px;
-    padding: 0px;
+    background-color: rgba(0, 0, 0, 0.849);
 }
 
 header {
-    background-color: darkmagenta;
+    background-color: #4A0F61;
     text-align: center;
     padding: 5px;
-    margin: auto;
+    padding-top: 10px;
 }
 
 header h1 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 3em;
-    margin: 0px;
-    padding: 10px;
-}
-
-nav {
-    background-color: rgba(139, 0, 139, 0.479);
-    padding: 5px;
-}
-
-nav a {
-    padding: 5px;
-    margin: 3px;
-    text-decoration: none;
-}
-
-nav a:hover {
-    background-color: darkmagenta;
-    transition: width 2s;
-}
-
-main {
-    display: inline-block;
-    padding-top: 50px;
-    box-sizing: border-box 500px;
-    width: 100%;
-}
-
-main > div > h2 {
-    padding: 5px;
-    margin: 5px;
     font-size: 3em;
 }
 
-main > div > p {
-    padding: 5px;
-    margin: 5px;
-    font-size: 1.2em;
-}
-
-div#caixa01 {
-    max-width: 600px;
-    padding: 10px;
-    margin: 0px;
-}
-
-div#caixa02 {
-    max-width: 600px;
-    padding: 10px;
-    margin: 0px;
-}
-
-div#caixa02 > a {
-    margin: 0px;
-    padding: 10px;
-    text-decoration: none;
-}
-
-img#foto-pecing {
+nav.navegacao {
     display: flex;
-    width: 30%;
-    height: auto;
-    border-radius: 50%;
+    justify-content: flex-end;
+    background-color: #841AAD;
+    margin: 0px;
+    width: auto;
 }
 
-.div-texto-foto {
+nav.navegacao > a {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    padding: 10px;
+    padding-left: 5px;
+}
+
+div.caixas {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+div.caixa-apresentacao {
+    width: 50%;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+div.caixa-apresentacao > h2 {
+    margin-bottom: 20px;
+}
+
+div.caixa-apresentacao > p {
+    padding: 10px;
+}
+
+div.caixa-trabalho {
+    width: 50%;
+}
+
+div.caixa-trabalho > h2 {
+    margin-bottom: 20px;
+}
+
+div.caixa-trabalho > p {
+    padding: 10px;
+}
+
+img.foto-pecing {
+    max-width: 20%;
+    display: block;
+    text-align: end;
 }
