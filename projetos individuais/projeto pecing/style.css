@@ -51,10 +51,11 @@ nav.navegacao > a {
 
 div.caixas {
     display: flex;
-    flex-direction: column;
     text-align: center;
     margin: 0px;
     padding: 0px;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 div.caixa-apresentacao {
@@ -85,12 +86,10 @@ div.caixa-trabalho > p {
 }
 
 img.foto-pecing {
-    max-width: 20%;
-    display: block;
-    position: absolute;
-    right: 1000px;
-    top: 200px;
-    left: 1200px;
+    display: flex;
+    object-fit: cover;
+    object-position: right;
+    width: 15%;
 }
 
 footer {
