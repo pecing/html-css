@@ -1,114 +1,70 @@
 @charset "UTF-8";
 
 * {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
     padding: 0px;
-    color: white;
-}
-
-h1 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-h2 {
-    font-size: 2.5em;
-}
-
-p {
-    font-size: 1.5em;
+    margin: 0px;
 }
 
 body {
-    background-color: rgba(0, 0, 0, 0.849);
+    background-color: #232323;
+    color: white;
 }
 
 header {
-    background-color: #4A0F61;
+    background-color: #8E6534;
     text-align: center;
-    padding: 5px;
-    padding-top: 10px;
 }
 
-header h1 {
-    font-size: 3em;
+header > h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4em;
+    color: #503721;
+    padding: 15px;
 }
 
-nav.navegacao {
+header nav {
     display: flex;
     justify-content: flex-end;
-    background-color: #841AAD;
-    margin: 0px;
-    width: auto;
-}
-
-nav.navegacao > a {
-    display: flex;
-    justify-content: flex-end;
-    padding: 10px;
-    padding-left: 5px;
-}
-
-div.caixas {
-    display: flex;
-    text-align: center;
-    margin: 0px;
-    padding: 0px;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-div.caixa-apresentacao {
-    width: 50%;
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-
-div.caixa-apresentacao > h2 {
-    margin-bottom: 20px;
-}
-
-div.caixa-apresentacao > p {
-    padding: 10px;
-}
-
-div.caixa-trabalho {
-    width: 50%;
-}
-
-div.caixa-trabalho > h2 {
-    margin-bottom: 20px;
-}
-
-div.caixa-trabalho > p {
-    padding: 10px;
-}
-
-img.foto-pecing {
-    display: flex;
-    object-fit: cover;
-    object-position: right;
-    width: 15%;
-}
-
-footer {
-    position: fixed;
-    width: 100%;
-    background-color: black;
-    bottom: 0px;
+    gap: 24px;
+    background-color: #D9D9D9;
     padding: 5px;
 }
 
-footer > p {
-    text-align: center;
-    font-size: 1em;
-}
-
-.footer-links {
-    text-align: center;
-}
-
-.footer-links > a {
+.cabecalho-menu-item {
+    color: black;
     text-decoration: none;
+}
+
+.conteudo-principal {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-principal-escrito-titulo {
+    margin: 0;
+    text-align: center;
+    width: 50%;
+    font-size: 2.5em;
+}
+
+.conteudo-principal-escrito-paragrafo {
+    margin: 0;
+    text-align: center;
+    width: 50%;
+    font-size: 1.5em;
+}
+
+.foto-pecing {
+    width: 20%;
 }
