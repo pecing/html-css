@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, molestiae! Dolores est nulla eius officia hic earum? Autem, sunt modi cum architecto aspernatur recusandae corrupti fuga, cumque placeat repellat atque!</p>
+
+    <ul>
+        <li><a href="pages/pag001.html" target="frame">Primeira página</a></li>
+        <li><a href="pages/pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="pages/pag003.html" target="frame">Terceira página</a></li>
+    </ul>
+
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, cupiditate cumque nulla exercitationem tenetur, quod id saepe accusantium eaque tempora laboriosam nam distinctio doloribus eius? Ut illum neque dolores necessitatibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis libero sapiente, optio laudantium culpa quidem, consequatur soluta mollitia suscipit nobis eos a modi voluptates, similique rerum perspiciatis odio itaque possimus?</p>
+
+    <iframe id="tela" title="iframe" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1><p>Lorem</p>">
+        Infelizmente seu navegador não é compátivel com isso.
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ad eum ipsum quas obcaecati perferendis perspiciatis, ipsa, necessitatibus modi illum at est repudiandae quasi suscipit consequatur doloribus voluptate! Error, odit?</p>
+
+
+</body>
+</html>
